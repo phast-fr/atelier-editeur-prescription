@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "033fb3ce-2169-4904-b390-4cd33bb4f0e8",
+		"name": "Atelier2021",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MK Search UCD by code",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Atelier_2021",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Atelier@phast.fr",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://recette.phast.fr/resources-server_Atelier/api/fhir/MedicationKnowledge?code=3400891297874&product-type=UCD",
+					"protocol": "https",
+					"host": [
+						"recette",
+						"phast",
+						"fr"
+					],
+					"path": [
+						"resources-server_Atelier",
+						"api",
+						"fhir",
+						"MedicationKnowledge"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "3400891297874"
+						},
+						{
+							"key": "product-type",
+							"value": "UCD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MK Search UCD by Name",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Atelier_2021",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Atelier@phast.fr",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://recette.phast.fr/resources-server_Atelier/api/fhir/MedicationKnowledge?code:text=codolipran&product-type=UCD",
+					"protocol": "https",
+					"host": [
+						"recette",
+						"phast",
+						"fr"
+					],
+					"path": [
+						"resources-server_Atelier",
+						"api",
+						"fhir",
+						"MedicationKnowledge"
+					],
+					"query": [
+						{
+							"key": "code:text",
+							"value": "codolipran"
+						},
+						{
+							"key": "product-type",
+							"value": "UCD"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MK Search DC (Paracetamol)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Atelier_2021",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Atelier@phast.fr",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://recette.phast.fr/resources-server_Atelier/api/fhir/MedicationKnowledge?code:text=PARACETAMOL&product-type=DC",
+					"protocol": "https",
+					"host": [
+						"recette",
+						"phast",
+						"fr"
+					],
+					"path": [
+						"resources-server_Atelier",
+						"api",
+						"fhir",
+						"MedicationKnowledge"
+					],
+					"query": [
+						{
+							"key": "code:text",
+							"value": "PARACETAMOL"
+						},
+						{
+							"key": "product-type",
+							"value": "DC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MK Search DC (Paracetamol + Codeine)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Atelier_2021",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Atelier@phast.fr",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://recette.phast.fr/resources-server_Atelier/api/fhir/MedicationKnowledge?code:text=paracet&code:text=codei&product-type=DC",
+					"protocol": "https",
+					"host": [
+						"recette",
+						"phast",
+						"fr"
+					],
+					"path": [
+						"resources-server_Atelier",
+						"api",
+						"fhir",
+						"MedicationKnowledge"
+					],
+					"query": [
+						{
+							"key": "code:text",
+							"value": "paracet"
+						},
+						{
+							"key": "code:text",
+							"value": "codei"
+						},
+						{
+							"key": "product-type",
+							"value": "DC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MK Lookup DC (Paracetamol)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Atelier_2021",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Atelier@phast.fr",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://recette.phast.fr/resources-server_Atelier/api/fhir/MedicationKnowledge/MK_1263254/$lookup",
+					"protocol": "https",
+					"host": [
+						"recette",
+						"phast",
+						"fr"
+					],
+					"path": [
+						"resources-server_Atelier",
+						"api",
+						"fhir",
+						"MedicationKnowledge",
+						"MK_1263254",
+						"$lookup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MK Lookup DC (Paracetamol solution buvable)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Atelier_2021",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "atelier@phast.fr",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/fhir+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"resourceType\": \"Parameters\",\r\n  \"parameter\": [\r\n    {\r\n      \"name\": \"with-related-medication-knowledge\",\r\n      \"valueBoolean\": false\r\n    },\r\n    {\r\n      \"name\": \"medicationKnowledge\",\r\n      \"resource\": {\r\n        \"resourceType\": \"MedicationKnowledge\",\r\n        \"id\": \"MK_1263254\",\r\n        \"code\": {\r\n          \"coding\": [\r\n            {\r\n              \"system\": \"http://phast.fr/fhir/CodeSystem/Pharmacy/CIOdc/SIPh-CIO_DC\",\r\n              \"code\": \"1263254\"\r\n            },\r\n            {\r\n              \"system\": \"http://snomed.info/sct\",\r\n              \"code\": \"777067000\",\r\n              \"display\": \"médicament contenant seulement paracétamol\"\r\n            }\r\n          ],\r\n          \"text\": \"PARACETAMOL\"\r\n        },\r\n        \"status\": \"active\",\r\n        \"ingredient\": [\r\n          {\r\n            \"itemCodeableConcept\": {\r\n              \"coding\": [\r\n                {\r\n                  \"system\": \"http://phast.fr/fhir/CodeSystem/Pharmacy/CIOdc/DC_Composant\",\r\n                  \"code\": \"5865\"\r\n                }\r\n              ],\r\n              \"text\": \"PARACETAMOL\"\r\n            },\r\n            \"isActive\": true\r\n          }\r\n        ],\r\n        \"intendedRoute\": [],\r\n        \"doseForm\": {\r\n          \"coding\": [\r\n            {\r\n              \"system\": \"http://phast.fr/fhir/CodeSystem/Pharmacy/CIOdc/SIPh-CIO-Forme\",\r\n              \"code\": \"189\"\r\n            },\r\n            {\r\n              \"system\": \"http://snomed.info/sct\",\r\n              \"code\": \"385023001\",\r\n              \"display\": \"Solution buvable\"\r\n            },\r\n            {\r\n              \"system\": \"http://edqm.eu\",\r\n              \"code\": \"10105000\",\r\n              \"display\": \"Solution  buvable\"\r\n            }\r\n          ],\r\n          \"text\": \"Solution buvable\"\r\n        }\r\n      }\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://recette.phast.fr/resources-server_Atelier/api/FHIR/MedicationKnowledge/$lookup",
+					"protocol": "https",
+					"host": [
+						"recette",
+						"phast",
+						"fr"
+					],
+					"path": [
+						"resources-server_Atelier",
+						"api",
+						"FHIR",
+						"MedicationKnowledge",
+						"$lookup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
